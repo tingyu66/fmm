@@ -3,3 +3,6 @@ vgcore.*
 a.out
 
 docs/html
+docs/build/
+docs/latex/
+docs/xml/
