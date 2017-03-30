@@ -1,5 +1,5 @@
-types
-=====
+Data Type
+=========
 
 exaFMM provides the following data types:
 

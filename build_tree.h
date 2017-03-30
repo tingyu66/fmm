@@ -79,7 +79,7 @@ namespace exafmm {
     for (int i=0; i<8; i++) counter[i] = offsets[i];            // Copy offsets to counter
     for (int i=begin; i<end; i++) {                             // Loop over bodies
       for (int d=0; d<3; d++) x[d] = bodies[i].X[d];            //  Position of body
-      int octant = (x[0] > X[0]) + ((x[1] > X[1]) << 1) + ((x[2] > X[2]) << 2);// Which octant body belongs to`
+      int octant = (x[0] > X[0]) + ((x[1] > X[1]) << 1) + ((x[2] > X[2]) << 2);// Which octant body belongs to
       for (int d=0; d<3; d++) buffer[counter[octant]].X[d] = bodies[i].X[d];// Permute bodies coordinates out-of-place according to octant
       buffer[counter[octant]].q = bodies[i].q;                //  Permute bodies sources out-of-place according to octant
       counter[octant]++;                                      //  Increment body count in octant

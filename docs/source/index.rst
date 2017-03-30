@@ -5,10 +5,17 @@
    The full license is in the file LICENSE, distributed with this software.
 
 .. toctree::
-   :caption: UNIT TEST
+   :caption: INTRO
    :maxdepth: 2
 
-   ./unit_test
+   compile
+   documentation
+
+.. toctree::
+   :caption: TEST
+   :maxdepth: 2
+
+   unit_test
 
 .. toctree::
    :caption: API REFERENCE
